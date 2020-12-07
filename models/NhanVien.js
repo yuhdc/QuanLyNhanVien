@@ -2,36 +2,38 @@
 
 
 var NhanVien = function () {
-    this.maNV = '';
-    this.tenNV = '';
+    this.maNhanVien = '';
+    this.tenNhanVien = '';
     this.luongCoBan = '';
-    this.heSoLuong = '';
-    this.gioLam = '';
+    this.heSoChucVu = '';
+    this.soGioLamTrongThang = '';
 
     this.tongLuong = function () {
-        var luong = this.luongCoBan * this.heSoLuong;
+        var luong = this.luongCoBan * this.heSoChucVu;
         return luong;
     }
 
     this.xepLoai = function () {
         var loai;
-        if (isNaN(this.gioLam)) {
+        if (isNaN(this.soGioLamTrongThang)) {
             loai = 'không xác định';
             return loai;
         }
-        if (this.gioLam >= 120) {
+        if (this.soGioLamTrongThang >= 120) {
             loai = 'nhân viên xuất sắc';
-        } else if (this.gioLam >= 100) {
+        } else if (this.soGioLamTrongThang >= 100) {
             loai = 'nhân viên giỏi';
-        } else if (this.gioLam >= 80) {
+        } else if (this.soGioLamTrongThang >= 80) {
             loai = 'nhân viên khá';
-        } else if (this.gioLam >= 50) {
+        } else if (this.soGioLamTrongThang >= 50) {
             loai = 'nhân viên trung bình'
         } else {
             loai = 'nhân viên yếu kém';
         }
         return loai;
     }
+
+
 
     // this.xetChucVu = function () {
     //     const optionArr = document.querySelector('#chucVu').options;

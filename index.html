@@ -43,7 +43,7 @@
                 <h1 class="dispaly-4 text-center text-white bg-secondary mt-1">Quản lý nhân viên</h1>
                 <div class="form-group">
                     <p>Mã nhân viên :</p>
-                    <input type="text" id="maNV" class="form-control">
+                    <input type="text" id="maNhanVien" class="form-control">
                     <p class="text text-danger" id="kiemTraRong-maNhanVien"></p>
                     <p class="text text-danger" id="kiemTraDinhDang-maNhanVien"></p>
                     <p class="text text-danger" id="kiemTraGiaTri-maNhanVien"></p>
@@ -51,7 +51,7 @@
 
                 <div class="form-group">
                     <p>Tên nhân viên :</p>
-                    <input type="text" id="tenNV" class="form-control">
+                    <input type="text" id="tenNhanVien" class="form-control">
                     <p class="text text-danger" id="kiemTraRong-tenNhanVien"></p>
                     <p class="text text-danger" id="kiemTraDinhDang-tenNhanVien"></p>
                 </div>
@@ -75,10 +75,10 @@
 
                 <div class="form-group">
                     <p>Giờ làm trong tháng :</p>
-                    <input type="text" id="gioLam" class="form-control">
-                    <p class="text text-danger" id="kiemTraRong-gioLam"></p>
-                    <p class="text text-danger" id="kiemTraDinhDang-gioLam"></p>
-                    <p class="text text-danger" id="kiemTraGiaTri-gioLam"></p>
+                    <input type="text" id="soGioLamTrongThang" class="form-control">
+                    <p class="text text-danger" id="kiemTraRong-soGioLamTrongThang"></p>
+                    <p class="text text-danger" id="kiemTraDinhDang-soGioLamTrongThang"></p>
+                    <p class="text text-danger" id="kiemTraGiaTri-soGioLamTrongThang"></p>
                 </div>
 
                 <div class="text-right">
@@ -118,8 +118,12 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="./models/NhanVien.js"></script>
     <script src="./models/Validation.js"></script>
+    <script src="./service/CongTy.js"></script>
+
     <!-- main js -->
     <script src="./main.js"></script>
 
